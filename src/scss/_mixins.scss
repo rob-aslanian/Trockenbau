@@ -1,0 +1,39 @@
+///// Mixins /////
+
+@mixin  collapse ($color:white, $speed:.3s , $mt:1.25rem, $p:.75rem ) {
+
+    .collapse-btn { display: block !important; }
+    .collapse{
+        display: none; 
+        flex-basis: 100%;
+        ul{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-top: $mt;
+            padding: $p;
+            li:not(:first-child){
+                margin-top: $mt;
+            }
+            li{
+                position: relative;
+                &::after{
+                    transition: all $speed;
+                    content: '';
+                    position: absolute;
+                    bottom: -7px;
+                    left: 50%;
+                    height: 3px;
+                    width: 0%;
+                    background: $color;
+                    }
+                &:hover{
+                    &:after{
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

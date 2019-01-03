@@ -1,0 +1,12 @@
+////// LandScape  //////
+@media screen and (max-width:1024px) and 
+                  (max-height:768px)
+{
+
+}
+
+////// Portait  //////
+@media screen and (max-width:768px)
+{
+     @include collapse;
+}

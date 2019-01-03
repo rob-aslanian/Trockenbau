@@ -1,0 +1,55 @@
+{
+  "name": "hjcon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "browserslist": [
+    "> 1%",
+    "ie >  9"
+  ],
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --hot --inline ",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.3.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "cssnano": "^3.10.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "imagemin-webpack-plugin": "^2.1.1",
+    "img-loader": "^2.0.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.8.3",
+    "optimize-css-assets-webpack-plugin": "^4.0.0",
+    "postcss-loader": "^2.1.4",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "svg-url-loader": "^2.3.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "animate.css": "^3.6.1",
+    "bootstrap": "^4.1.1",
+    "css-hot-loader": "^1.4.3",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0",
+    "slick-carousel": "^1.8.1",
+    "wowjs": "^1.1.3"
+  }
+}
