@@ -302,6 +302,40 @@ nav ul li a:hover {
 .filter_btns li {
   margin: 10px;
 }
+.portfolio_img {
+  position: relative;
+}
+.shadow {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  & span {
+    border: 2px solid $white;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & img {
+      width: 100px;
+      height: 100px;
+    }
+    & p {
+      font-family: $lato;
+      font-weight: 400;
+      font-size: 2.5rem;
+      color: $white;
+    }
+  }
+}
+.portfolio_img img {
+  height: 100%;
+}
 /// Contact
 .contact {
   overflow: hidden;
