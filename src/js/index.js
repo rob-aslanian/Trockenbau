@@ -54,6 +54,37 @@ $(function() {
       }
   });
 
+
+  function loadMore($btn , $length , $textTitle){
+      let btn = $($btn),
+          textElem = btn.prev(),
+          text = textElem.text();
+     
+          if($length < text.length){
+            btn.text($textTitle);
+
+            let _text = text.slice(0 , $length);
+     
+            textElem.text(_text);
+
+            btn.on('click' , function(e){
+              e.preventDefault();
+ 
+    
+              textElem.hide().text(text).slideDown();
+              btn.text('Know less').on('click' , function(e){
+                e.preventDefault();
+                  return loadMore($btn , $length , $textTitle);
+              });
+            })
+        }
+      
+  }
+
+
+  loadMore('.Weiterlesen' , 150 , 'Weiterlesen');
+  loadMore('.loadMore' , 10 , 'Know More');
+
   /**
    * Load more data
    * @param {HtmlElemnt} $elem
