@@ -83,6 +83,8 @@ $(function() {
   // Your code here....
 
   $("#slider-area").slick({
+    prevArrow: "<button class='slick-arrow slick-prev'><</button>",
+    nextArrow: "<button class='slick-arrow slick-next'>></button>"
     // dots: false,
     // centerMode: true,
     // infinite: false,
