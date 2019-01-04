@@ -29,18 +29,20 @@
     word-break: break-all;
     width: 100%;
   }
-
+  .header_content {
+    width: 50%;
+  }
   /// Uber
   .uber {
     padding: 1.75rem;
   }
   /// Footer
-  .footer{
-    &__list{
+  .footer {
+    &__list {
       flex-basis: 100%;
       justify-content: space-between;
     }
-    &__copy{
+    &__copy {
       text-align: center;
       margin: 1.25rem auto;
     }
@@ -65,7 +67,7 @@
         }
       }
       & li:hover {
-        background-color: red;
+        background-color: $red;
         transition: $speed;
       }
     }

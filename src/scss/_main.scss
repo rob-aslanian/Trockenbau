@@ -104,6 +104,13 @@ textarea {
       color: $white;
     }
   }
+  &-grey {
+    background: $grey;
+    color: $white;
+    &:hover {
+      background: $red;
+    }
+  }
 }
 
 .icon {
@@ -218,7 +225,7 @@ nav ul li a:hover {
   padding: 20px 0;
   background-color: $red;
   opacity: 0.6;
-  & h3 {
+  & h2 {
     color: $white;
     font-family: $secondary_font;
     font-weight: lighter;
@@ -286,7 +293,15 @@ nav ul li a:hover {
     }
   }
 }
-
+// portfolio
+.filter_btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter_btns li {
+  margin: 10px;
+}
 /// Contact
 .contact {
   overflow: hidden;
