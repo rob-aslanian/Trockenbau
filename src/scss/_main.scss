@@ -1,6 +1,13 @@
 ///// Main Style /////
 @import '_vars';
+@import 'fonts';
 @import '_mixins';
+
+/// Classes 
+.wrapper{
+	padding-left: 7.291% !important;
+	padding-right: 7.291% !important;
+}
 
 
 /** Collapse **/
