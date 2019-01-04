@@ -90,17 +90,18 @@ $(function() {
   }
 
 
-  loadMore('.Weiterlesen' ,'Weiterlesen');
-  loadMore('.loadMore' , 'Know More');
+
+  $('.loadMore').each((_ , el) => loadMore(el , 'Know More'));
+    loadMore('.Weiterlesen' ,'Weiterlesen');
 
   /**
    * Load more data
    * @param {HtmlElemnt} $elem
    * @param {Number} $count
    */
-  function showMore($elem, $count) {
+  function showMore($elem, $btn , $count) {
     let allElems = $($elem),
-      btn = $(".showMore");
+      btn = $($btn);
 
     $($elem)
       .slice(0, $count)
@@ -122,7 +123,7 @@ $(function() {
     }
   }
 
-  showMore(".machen__block", 6);
+  showMore(".machen__block", '.showMore' ,  6);
 
   // Your code here....
 

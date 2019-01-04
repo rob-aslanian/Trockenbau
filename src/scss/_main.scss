@@ -71,6 +71,11 @@ input , textarea{
   background: $red;
 }
 
+::selection{
+  background: $red;
+  color:$white;
+}
+
 /// Classes
 .wrapper {
   padding-left: 7.291% !important;
@@ -246,7 +251,11 @@ nav ul li a:hover {
   align-items: center;
   padding: 0 1.25rem;
   &__block{
-	  display: none;
+    display: none;
+    transition: $speed;
+    &:hover{
+      transform: translateY(-5%);
+    }
   }
   &__content {
     margin-top: 4rem;
@@ -311,7 +320,8 @@ nav ul li a:hover {
 				display: flex;
 				align-items: flex-start;
 				.icon{
-					margin-right: 0.5rem;
+          margin-right: 0.5rem;
+
 				}
 				&:not(:last-child){
 					margin-bottom: 1rem;
@@ -336,7 +346,12 @@ nav ul li a:hover {
 			&__link{
 				img{
 					width: 35px;
-					height: 35px;
+          height: 35px;
+          border-radius: 50%;
+          transition: $speed + .2;
+          &:hover{
+            transform: rotate(360deg);
+          }
 				}
 			}
 		}
@@ -365,7 +380,8 @@ nav ul li a:hover {
 		color:$light_grey;
 		flex-wrap: wrap;
 		&__item:not(:last-child){
-			margin-right: 1.25rem;
+      margin-right: 1.25rem;
+      text-transform: uppercase;
 		}
 	}
 	&__copy{
