@@ -4,15 +4,14 @@ $(function(){
 
 
     /** Smooth Scrollin */
-    // $('YOUR CLASS').click(function(e){
-
-    //     e.preventDefault();
-    //     $('html  , body').animate({
-    //         scrollTop: $(this.hash).length === 0 ? 
-    //                     $(this).offset().top : 
-    //                     $(this.hash).offset().top
-    //     }, 1000);
-    // });
+    $('.link').click(function(e){
+        e.preventDefault();
+        $('html  , body').animate({
+            scrollTop: $(this.hash).length === 0 ? 
+                        $(this).offset().top : 
+                        $(this.hash).offset().top
+        }, 1000);
+    });
     
     /** Menu Collapse */
     $('.collapse-btn').click(function(e){

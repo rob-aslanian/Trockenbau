@@ -9,6 +9,14 @@
         margin-top: 1.75rem;
     }
 
+    /// Footer
+    .footer{
+        &__list{
+          flex-basis: 100%;
+          justify-content: flex-start;
+        }
+      }
+
 }
 ////// Portarait //////
 @media screen and (max-width:414px)

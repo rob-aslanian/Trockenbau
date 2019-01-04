@@ -34,6 +34,17 @@
   .uber {
     padding: 1.75rem;
   }
+  /// Footer
+  .footer{
+    &__list{
+      flex-basis: 100%;
+      justify-content: space-between;
+    }
+    &__copy{
+      text-align: center;
+      margin: 1.25rem auto;
+    }
+  }
 
   @include collapse;
   .navbar {
