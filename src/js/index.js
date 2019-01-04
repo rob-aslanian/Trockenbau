@@ -1,7 +1,12 @@
 import $ from "jquery"; // Jquery
 import "slick-carousel";
+import wow from 'wowjs';
+
+window.WOW = wow.WOW;
 
 $(function() {
+
+    new WOW().init();
   /** Smooth Scrollin */
   // $('YOUR CLASS').click(function(e){
 
