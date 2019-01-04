@@ -8,30 +8,45 @@
     <title>HjcOn</title>
   </head>
   <body>
-    <header>
-      <div id="wrapper">
-        <div id="slider-area" class="owl-carousel">
-          <div
-            style="background-image: url(img/slider/kelsey-dody-1170165-unsplash.png)"
-          >
-            <div>
-              <h3>DONCE VEL RISUS UT JUSTO DAPIBUS</h3>
-              <button class="btn btn-white">know more</button>
-            </div>
+    <header id="home">
+      <div id="slider-area">
+        <div
+          class="slider_child"
+          style="background-image: url(img/slider/kelsey-dody-1170165-unsplash.png)"
+        >
+          <div class="header_content">
+            <h3>DONCE VEL RISUS UT JUSTO DAPIBUS</h3>
+            <a href=""><button class="btn btn-white">know more</button></a>
+          </div>
+        </div>
+        <div
+          class="slider_child"
+          style="background-image: url(img/slider/kelsey-dody-1170165-unsplash.png)"
+        >
+          <div class="header_content">
+            <h3>DONCE VEL RISUS UT JUSTO DAPIBUS</h3>
+            <a href=""><button class="btn btn-white">know more</button></a>
           </div>
         </div>
       </div>
+
       <div class="navbar">
         <nav class="navbar-collapse">
           <button class="collapse-btn btn btn-red">&equiv;</button>
           <ul>
-            <li class="collapse"><a href="">START</a></li>
-            <li class="collapse"><a href="">UBER UNS</a></li>
-            <li class="collapse"><a href="">ZIELE</a></li>
-            <li class="collapse"><a href="">WAS MACHEN WIR</a></li>
-            <li class="collapse"><a href="">PORTFOLIO</a></li>
-            <li class="collapse"><a href="">KONTAKT</a></li>
-            <li class="collapse"><a href="">EXTRA</a></li>
+            <li class="collapse"><a class="link" href="#home">START</a></li>
+            <li class="collapse"><a class="link" href="#uber">UBER UNS</a></li>
+            <li class="collapse"><a class="link" href="">ZIELE</a></li>
+            <li class="collapse">
+              <a class="link" href="#machen">WAS MACHEN WIR</a>
+            </li>
+            <li class="collapse">
+              <a class="link" href="#portfolio">PORTFOLIO</a>
+            </li>
+            <li class="collapse">
+              <a class="link" href="#kontakt">KONTAKT</a>
+            </li>
+            <li class="collapse"><a class="link" href="">EXTRA</a></li>
           </ul>
         </nav>
       </div>
@@ -56,7 +71,7 @@
     <section id="machen" class="machen">
       <h2 class="underline">WAS MACHEN WIR</h2>
       <div class="machen__content row">
-        <div class="col-md-4 machen__block">
+        <div class="col-md-4">
           <div class="col-md-12 machen__content__block">
             <img
               src="./img/machen/images.png"
@@ -66,7 +81,7 @@
             <div class="machen__content__info"><h4>AKUSTIK</h4></div>
           </div>
         </div>
-        <div class="col-md-4 machen__block">
+        <div class="col-md-4">
           <div class="col-md-12 machen__content__block">
             <img
               src="./img/machen/images2.png"
@@ -76,7 +91,7 @@
             <div class="machen__content__info"><h4>BRANDSCHULTZ</h4></div>
           </div>
         </div>
-        <div class="col-md-4 machen__block">
+        <div class="col-md-4">
           <div class="col-md-12 machen__content__block">
             <img
               src="./img/machen/images3.png"
@@ -86,7 +101,7 @@
             <div class="machen__content__info"><h4>TROCKENBAU</h4></div>
           </div>
         </div>
-        <div class="col-md-4 mt-4 machen__block">
+        <div class="col-md-4 mt-4">
           <div class="col-md-12 machen__content__block">
             <img
               src="./img/machen/images4.png"
@@ -96,7 +111,7 @@
             <div class="machen__content__info"><h4>ALTBAU SANIERUNG</h4></div>
           </div>
         </div>
-        <div class="col-md-4 mt-4 machen__block">
+        <div class="col-md-4 mt-4">
           <div class="col-md-12 machen__content__block">
             <img
               src="./img/machen/images5.png"
@@ -106,7 +121,7 @@
             <div class="machen__content__info"><h4>TISCHLERARBEIT</h4></div>
           </div>
         </div>
-        <div class="col-md-4 mt-4 machen__block">
+        <div class="col-md-4 mt-4">
           <div class="col-md-12 machen__content__block">
             <img
               src="./img/machen/images6.png"
@@ -116,11 +131,92 @@
             <div class="machen__content__info"><h4>SPEZIALBAU</h4></div>
           </div>
         </div>
-              
       </div>
-      <button class="btn btn-red showMore">Mehr laden</button>
     </section>
     <!-- END MACHEN -->
+
+    <!-- START KONTAKT -->
+    <section id="kontact" class="contact wrapper">
+            <div class="contact__top">
+                <h2 class="underline">Kontakt</h2>
+                <p>Deutsches Ipsum Dolor sit amet, Sprechen Sie deutsch adipiscing elit, sed do eiusmod Frohsinn incididunt ut labore et
+                        dolore Ohrwurm aliqua. Ut enim ad minim Siebentausendzweihundertvierundfünfzig quis nostrud exercitation ullamco </p>
+            </div>
+            <div class="contact__content">
+                <h3 class="mt-5">UNSERE ADRESSE</h3>
+                <div class="row contact__main">
+                    <div class="contact__content left col-md-7">
+                        <ul class="contact__content__list">
+                            <li class="contact__content__list__item">
+                                <div class="icon">
+                                    <img src="./img/icons/location.svg" alt="Location">
+                                </div>
+                                <span>Hofherr - Schrantz - Gasse 4, A-1210 Wien  Österreich</span>
+                            </li>
+                            <li class="contact__content__list__item">
+                                <div class="icon">
+                                    <img src="./img/icons/mail.svg" alt="Mail">
+                                </div>          
+                                <span>
+                                    <a href="mailto:info@ditz.com">info@ditz.com</a>
+                                </span>
+                            </li>
+                            <li class="contact__content__list__item">
+                                <div class="icon">
+                                        <img src="./img/icons/message.svg" alt="message">
+                                </div>
+                                <span>
+                                    <a href="tel:+49 7248 927930">+49 7248 927930</a>
+                                </span>
+                            </li>
+                        </ul>
+                        <h3 class="mt-5">SOZIALES</h3>
+                        <ul class="sociales row__list">
+                            <li class="sociales__link">
+                                <a href="https://www.facebook.com">
+                                    <img src="./img/icons/socials/facebook.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li class="sociales__link">
+                                <a href="https://www.instagram.com">
+                                    <img src="./img/icons/socials/instagram.svg" alt="instagram">
+                                </a>
+                            </li>
+                            <li class="sociales__link">
+                                <a href="https://linkedin.com">
+                                    <img src="./img/icons/socials/linkedin.svg" alt="linkedin">
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- left -->
+                    <div class="contact__content right col-md-4">
+                        <form action="#" class="contact__content__form">
+                            <input name="name" type="text" required placeholder="Name">
+                            <input name="email" type="email" required placeholder="Email">
+                            <textarea name="text" placeholder="Nachricht" cols="30" rows="10"></textarea>
+                            <button type="submit" class="btn btn-red">Email Senden</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END KONTAKT -->
+        <!-- START FOOTER -->
+        <footer class="footer">
+            <ul class="footer__list left row__list">
+                <li class="footer__list__item links"><a class="link" href="#home">START</a></li>
+                <li class="footer__list__item links"><a class="link" href="#uber">UBER UNS</a></li>
+                <li class="footer__list__item links"><a class="link" href="#">ZIELE</a></li>
+                <li class="footer__list__item links"><a class="link" href="#machen">WAS MACHEN WIR</a></li>
+                <li class="footer__list__item links"><a class="link" href="#portfolio">PORTFOLIO</a></li>
+                <li class="footer__list__item links"><a class="link" href="#kontact">KONTAKT</a></li>
+                <li class="footer__list__item links"><a class="link" href="#">EXTRA</a></li>
+            </ul>
+            <span class="footer__copy">
+                Copyright All rights are reserved
+            </div>
+        </footer>
+        <!-- END FOOTER -->
 
     
 
