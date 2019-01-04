@@ -3,10 +3,152 @@
 @import 'fonts';
 @import '_mixins';
 
+
+/// Tags 
+body{
+	font-family: $main_font;
+	font-size: 1rem;
+	box-sizing: border-box;
+	max-width: $max_width;
+}
+h2{
+	text-transform: uppercase;
+	font-size: $h2_size;
+	color:$grey;
+	font-weight: bold;
+}
+p{
+	font-size: $p_size;
+	color:$grey;
+	font-family: $secondary_font;
+	font-weight: bold;
+	text-align: center;
+}
+img{
+	height: auto;
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+::-webkit-scrollbar
+{
+  width: 10px; 
+  height: 10px; 
+}
+
+::-webkit-scrollbar-thumb
+{
+  background:$red;
+}
+
 /// Classes 
 .wrapper{
 	padding-left: 7.291% !important;
 	padding-right: 7.291% !important;
+}
+
+.btn{
+	border: unset;
+	color:$white;
+	padding: 1rem 2rem;
+	outline: unset;
+	cursor: pointer;
+	font-weight: 400;
+	transition: $speed;
+	border: 1px solid transparent;
+	&-red{
+		background: $red;
+		&:hover{
+			background: $white;
+			color:$red;
+			border:1px solid $red;
+		}
+
+	}
+}
+
+.info__content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.grey__img{
+	filter: grayscale(100%);
+}
+
+//// Uber //// 
+.uber{
+	margin: 0.5rem 0.75rem;
+	border:4px solid $red;
+	padding: 2.25rem 4.5rem;
+	& a {
+		margin-top: 2rem;
+	}
+}
+
+//// Machen ////
+.machen{
+	text-align: center;
+	overflow: hidden;
+	margin: 2rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 1.25rem;
+	&__content{
+		margin-top: 4rem;
+		// Block
+		&__block{
+			position: relative;
+		}
+		.col-md-4{
+			padding: unset !important;
+		}
+		// Info
+		&__info{
+			position: absolute;
+			background: rgba($white , .62);
+			top: 0;
+			z-index: 999;
+			border-radius: 50%;
+			width: 60%;
+			height: 60%;
+			left: calc(50% - 30%);
+			top: calc(50% - 30%);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			word-break: break-all;
+			overflow: hidden;
+			h4{
+				font-size: $h3_size;
+				color:$grey;
+				font-weight: 400;
+				text-transform: uppercase;
+				white-space: pre-wrap;
+				width: 50%;
+			}
+		}
+	}
+} 
+
+
+.underline{
+	position: relative;
+	text-align: center;
+	padding-bottom: 1.25rem;
+	&::after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		width: 50%;
+		height: 4px;
+		background: $line_color;
+		left: 25%;
+	}
 }
 
 

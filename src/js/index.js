@@ -1,14 +1,5 @@
 import $ from 'jquery' // Jquery 
 
-import fontawesome from '@fortawesome/fontawesome'
-import solid from '@fortawesome/fontawesome-free-solid'
-import brands from '@fortawesome/fontawesome-free-brands/'
-
-
-// Add the icon to the library so you can use it in your page
-fontawesome.library.add(solid);
-fontawesome.library.add(brands);
-
 $(function(){
 
 
