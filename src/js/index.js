@@ -55,35 +55,43 @@ $(function() {
   });
 
 
-  function loadMore($btn , $length , $textTitle){
+  function loadMore($btn , $textTitle){
       let btn = $($btn),
           textElem = btn.prev(),
-          text = textElem.text();
-     
-          if($length < text.length){
-            btn.text($textTitle);
+          text = textElem.text(),
+          length = textElem.attr('data-split') !== undefined 
+                                        ? +textElem.attr('data-split')
+                                        : text.length / 2;
+          
+               
+          if(length < text.length){
 
-            let _text = text.slice(0 , $length);
+            let _text = text.slice(0 , length);
      
             textElem.text(_text);
 
             btn.on('click' , function(e){
               e.preventDefault();
- 
-    
-              textElem.hide().text(text).slideDown();
-              btn.text('Know less').on('click' , function(e){
-                e.preventDefault();
-                  return loadMore($btn , $length , $textTitle);
-              });
+
+              let elem = e.target;    
+  
+              if(elem.textContent.toUpperCase() === $textTitle.toUpperCase()){
+                textElem.text(text);
+                elem.textContent = 'Weniger wissen';
+              } 
+              else{
+                textElem.text(_text);
+                elem.textContent = $textTitle;
+              }
+              
             })
         }
       
   }
 
 
-  loadMore('.Weiterlesen' , 150 , 'Weiterlesen');
-  loadMore('.loadMore' , 10 , 'Know More');
+  loadMore('.Weiterlesen' ,'Weiterlesen');
+  loadMore('.loadMore' , 'Know More');
 
   /**
    * Load more data
