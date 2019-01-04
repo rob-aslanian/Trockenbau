@@ -16,6 +16,11 @@
           justify-content: flex-start;
         }
       }
+    .contact__content{
+        &.left{
+            margin-top: 1.5rem;
+        }
+    }
 
 }
 ////// Portarait //////
@@ -28,5 +33,6 @@
     h2{
         font-size: 2rem;
    }
+
       
 }
