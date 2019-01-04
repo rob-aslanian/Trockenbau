@@ -1,11 +1,30 @@
 ////// LandScape //////
 @media screen and (max-width:736px)
 {
+    .machen__content{
+        margin-top: 2rem;
+    }
+    .machen__block{
+        flex-basis: 50%;
+        margin-top: 1.75rem;
+    }
+
+    /// Footer
+    .footer{
+        &__list{
+          flex-basis: 100%;
+          justify-content: flex-start;
+        }
+      }
 
 }
 ////// Portarait //////
 @media screen and (max-width:414px)
 {
+    .machen__block{
+        flex-basis: unset;
+        margin-top: 1.5rem;
+    }
     h2{
         font-size: 2rem;
    }

@@ -13,8 +13,21 @@ $(function() {
   //     }, 1000);
   // });
 
-  /** Menu Collapse */
+  /** Smooth Scrollin */
+  $(".link").click(function(e) {
+    e.preventDefault();
+    $("html  , body").animate(
+      {
+        scrollTop:
+          $(this.hash).length === 0
+            ? $(this).offset().top
+            : $(this.hash).offset().top
+      },
+      1000
+    );
+  });
 
+  /** Menu Collapse */
   $(".collapse-btn").click(function(e) {
     const collapse = $(".collapse");
 
@@ -35,6 +48,39 @@ $(function() {
         collapse.slideUp(350);
       }
   });
+
+  /**
+   * Load more data
+   * @param {HtmlElemnt} $elem
+   * @param {Number} $count
+   */
+  function showMore($elem, $count) {
+    let allElems = $($elem),
+      btn = $(".showMore");
+
+    $($elem)
+      .slice(0, $count)
+      .show();
+
+    if (allElems.length !== $count) {
+      btn.show();
+
+      btn.on("click", function(e) {
+        e.preventDefault();
+        $(`${$elem}:hidden`)
+          .slice(0, $count)
+          .slideDown();
+
+        if ($(`${$elem}:hidden`).length === 0) {
+          btn.fadeOut();
+        }
+      });
+    }
+  }
+
+  showMore(".machen__block", 6);
+
+  // Your code here....
 
   $("#slider-area").slick({
     // dots: false,
