@@ -294,13 +294,9 @@ nav ul li a:hover {
   }
 }
 // portfolio
-.filter_btns {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.filter_btns li {
-  margin: 10px;
+.active {
+  background-color: $red;
+  color: $white;
 }
 .portfolio_img {
   position: relative;
@@ -326,15 +322,58 @@ nav ul li a:hover {
       height: 100px;
     }
     & p {
-      font-family: $lato;
+      font-family: $secondary_font;
       font-weight: 400;
       font-size: 2.5rem;
       color: $white;
+      text-transform: uppercase;
     }
   }
 }
-.portfolio_img img {
+.img_conteiner:hover .shadow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close {
+  font-size: 50px;
+  color: $white;
+  cursor: pointer;
+}
+.modal {
+  transition: 1s;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
   height: 100%;
+  overflow: auto;
+  background: black;
+  &-content {
+    transition: 0.9s;
+    margin: auto;
+    display: block;
+    width: 10%; //70
+    max-width: 800px;
+    height: 80%; //80
+  }
+}
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+.project_img {
+  width: 100%;
+  height: 60%;
+  min-height: 650px;
 }
 /// Contact
 .contact {

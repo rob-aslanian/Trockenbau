@@ -8,6 +8,11 @@
     <title>HjcOn</title>
   </head>
   <body>
+      <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img src="img/portfolio/hamed-alishahi-1129788-unsplash.png" class="modal-content" id="img01">
+          <div id="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fuga dignissimos natus enim! Vero, officia.</div>
+        </div>
     <header id="home">
       <div id="slider-area">
         <div
@@ -15,8 +20,13 @@
           style="background-image: url(img/slider/kelsey-dody-1170165-unsplash.png)"
         >
           <div class="header_content">
+<<<<<<< HEAD
             <h2>DONCE VEL RISUS UT JUSTO DAPIBUS</h2>
             <a href="#"><button class="btn btn-white">know more</button></a>
+=======
+            <h3 data-split="10">DONCE VEL RISUS UT JUSTO DAPIBUS</h3>
+            <button class="btn btn-white loadMore">know more</button>
+>>>>>>> e5d2a3de88688b656eb9c41325ad28125c0a0968
           </div>
         </div>
         <div
@@ -64,7 +74,7 @@
         cupidatat non proident, sunt schnell culpa qui officia deserunt mollit
         Nackenheim id est laborum
       </p>
-      <a href="#"><button class="btn btn-red">Weiterlesen</button></a>
+      <button class="btn btn-red Weiterlesen">Weiterlesen</button>
     </section>
     <!-- END UBER -->
     <!-- START MACHEN -->
@@ -136,44 +146,53 @@
     <!-- END MACHEN -->
     <!-- START PORTFOLIO -->
     <section id="portfolio">
+
         <h2 class="underline wow fadeInDown">PORTFOLIO</h2>
         <p class="wow fadeIn" data-wow-delay=".3s">
-            Deutsches Ipsum Dolor sit amet, Sprechen Sie deutsch adipiscing elit,
-            sed do eiusmod Frohsinn incididunt ut labore et dolore Ohrwurm aliqua.
-            Ut enim ad minim Siebentausendzweihundertvierundfünfzig quis nostrud
-            exercitation ullamco laboris Berlin ut aliquip ex ea commodo Glühwein
-            Duis aute irure dolor in Freude schöner Götterfunken in voluptate velit
-            esse cillum Spezi eu fugiat nulla pariatur. Excepteur Bildung occaecat
-            cupidatat non proident, sunt schnell culpa qui officia deserunt mollit
-            Nackenheim id est laborum
+            Deutsches Ipsum Dolor sit amet, Sprechen Sie deutsch adipiscing elit, sed do eiusmod Frohsinn incididunt ut labore et
+dolore Ohrwurm aliqua. Ut enim ad minim Siebentausendzweihundertvierundfünfzig quis nostrud exercitation ullamco 
+laboris Berlin ut aliquip ex ea commodo Glühwein Duis aute irure dolor in Freude schöner Götterfunken in voluptate velit
+
           </p>
-          <div class="filter_portfolio">
-                <ul class="filter_btns">
-                    <li><button class="btn btn-grey">ALLES</button>  </li>
-                    <li><button class="btn btn-grey">DACH</button></li>
-                    <li><button class="btn btn-grey">BODEN</button></li>
-                    <li><button class="btn btn-grey">GEBAUDEINNERE</button></li>
-                    <li><button class="btn btn-grey">IM BETRIEB</button></li>
-                  </ul>
+          <div class="row justify-content-around">
+            <button class=" col-md-2 btn btn-grey active" data-filter="*">ALLES</button> 
+            <button class="col-md-2 btn btn-grey" data-filter=".dach">DACH</button> 
+            <button class="col-md-2 btn btn-grey" data-filter=".boden">BODEN</button>
+            <button class="col-md-2 btn btn-grey" data-filter=".gebaudeinnere">GEBAUDEINNERE</button>
+            <button class="col-md-2 btn btn-grey"data-filter=".imbetries">IM BETRIEB</button>
           </div>
-          <div class="portfolio_img row justify-content-center align-items-center no-gutters">
-            <div class="col-md-7 img_conteiner">
+          <div class="portfolio_img row justify-content-center align-items-center no-gutters wow fadeIn grid">
+            <div class="col-10 col-md-4 img_conteiner dach  wow fadeInUp" data-wow-delay=".1s">
               <div class="shadow">
-                  <span><img src="img/icons/zoom.svg" alt=""> <p>PORTFOLIO</p> </span>
+                  <span><img src="img/icons/zoom.svg" alt="" class="zoom"> <p>Project 1</p> </span>
               </div>
-                <img src="img/portfolio/s-o-c-i-a-l-c-u-t-1146980-unsplash.png" alt="">
+                <img src="img/portfolio/s-o-c-i-a-l-c-u-t-1146980-unsplash.png" class="project_img" alt="">
             </div>
-            <div class="col-md-5 img_conteiner">
-                <img src="img/portfolio/jose-soriano-1231565-unsplash.png" alt="">
+            <div class="col-10 col-md-4 img_conteiner boden wow fadeInUp" data-wow-delay=".1s">
+                <div class="shadow">
+                    <span><img src="img/icons/zoom.svg" alt="" class="zoom"> <p>Project 2</p> </span>
+                </div>
+                <img src="img/portfolio/jose-soriano-1231565-unsplash.png" alt="" class="project_img" >
             </div>
-            <div class="col-md-12 img_conteiner">
-                <img src="img/portfolio/mathias-adam-325761-unsplash.png" alt="">
+            <div class="col-10 col-md-8 img_conteiner imbetries wow fadeInUp" data-wow-delay=".1s">
+                <div class="shadow">
+                    <span><img src="img/icons/zoom.svg" alt="" class="zoom"> <p>Project 3</p> </span>
+                </div>
+                <img src="img/portfolio/mathias-adam-325761-unsplash.png" alt="" class="project_img" >
             </div>
-            <div class="col-md-6 img_conteiner">
-              <img src="img/portfolio/nastuh-abootalebi-284881-unsplash.png" alt="">
+            <div class="w-100"></div>
+            <div class="col-10 col-md-4 img_conteiner gebaudeinnere wow fadeInUp" data-wow-delay=".1s">
+                <div class="shadow">
+                    <span><img src="img/icons/zoom.svg" alt="" class="zoom"> <p>Project 4</p> </span>
+                </div>
+              <img src="img/portfolio/nastuh-abootalebi-284881-unsplash.png" alt="" class="project_img" >
             </div>
-            <div class="col-md-6 img_conteiner">
-              <img src="img/portfolio/hamed-alishahi-1129788-unsplash.png" alt="">
+            
+            <div class=" col-10 col-md-4 img_conteiner dach wow fadeInUp" data-wow-delay=".1s">
+                <div class="shadow">
+                    <span><img src="img/icons/zoom.svg" alt="" class="zoom"> <p>Project 5</p> </span>
+                </div>
+              <img src="img/portfolio/hamed-alishahi-1129788-unsplash.png" alt="" class="project_img" >
             </div>
           </div>
     </section>
