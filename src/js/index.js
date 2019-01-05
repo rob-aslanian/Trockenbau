@@ -153,7 +153,6 @@ $(function() {
 
       _self.addClass("active");
     }
-
     iso.arrange({ filter: filterBy });
   });
 

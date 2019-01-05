@@ -303,6 +303,13 @@ nav ul li a:hover {
   }
 }
 // portfolio
+.filter_btns_conteiner {
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 50px;
+}
 .filter_btns {
   margin: 20px 10px;
 }
@@ -310,9 +317,7 @@ nav ul li a:hover {
   background-color: $red;
   color: $white;
 }
-.portfolio_img {
-  position: relative;
-}
+
 .shadow {
   display: none;
   position: absolute;
@@ -330,15 +335,16 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     & img {
-      width: 100px;
-      height: 100px;
+      width: 30%;
+      height: 30%;
     }
     & p {
       font-family: $secondary_font;
       font-weight: 400;
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: $white;
       text-transform: uppercase;
+      margin: 0;
     }
   }
 }
@@ -385,7 +391,7 @@ nav ul li a:hover {
 .project_img {
   width: 100%;
   height: 60%;
-  min-height: 650px;
+  max-height: 300px;
 }
 
 /// Contact
