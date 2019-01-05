@@ -21,6 +21,9 @@
   h2 {
     font-size: 2.5rem;
   }
+  h3{
+    font-size: $h3_size - .35rem;
+  }
   h4 {
     font-size: 1.5rem !important;
   }
@@ -71,5 +74,8 @@
         transition: $speed;
       }
     }
+  }
+  .contact__content__list__item span{
+    font-size: 1rem;
   }
 }

@@ -71,6 +71,11 @@ textarea {
   background: $red;
 }
 
+::selection{
+  background: $red;
+  color:$white;
+}
+
 /// Classes
 .wrapper {
   padding-left: 7.291% !important;
@@ -254,8 +259,17 @@ nav ul li a:hover {
   flex-direction: column;
   align-items: center;
   padding: 0 1.25rem;
+<<<<<<< HEAD
   &__block {
     display: none;
+=======
+  &__block{
+    display: none;
+    transition: $speed;
+    &:hover{
+      transform: translateY(-5%);
+    }
+>>>>>>> 05de9b86d0025866153ff19b61c2aa0efd767611
   }
   &__content {
     margin-top: 4rem;
@@ -395,6 +409,7 @@ nav ul li a:hover {
     flex-wrap: wrap-reverse !important;
   }
 
+<<<<<<< HEAD
   /// Content
   &__content {
     &__list {
@@ -433,6 +448,69 @@ nav ul li a:hover {
         }
       }
     }
+=======
+/// Contact 
+.contact{
+	overflow: hidden;
+	padding-bottom: 4rem;
+	/// Top 
+	&__top{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	/// Main
+	&__main{
+		border-top:1px solid $grey;
+		padding-top: 2rem;
+		flex-wrap: wrap-reverse !important;
+	}
+
+	/// Content
+	&__content{
+		&__list{
+			padding: 0 1rem;
+			margin: 0;
+			&__item{
+				display: flex;
+				align-items: flex-start;
+				.icon{
+          margin-right: 0.5rem;
+
+				}
+				&:not(:last-child){
+					margin-bottom: 1rem;
+				}
+				a:hover{
+					color: $red;
+				}
+				span{
+					font-family: $secondary_font;
+					font-weight: bold;
+					line-height: 1.6;
+					font-size: $h3_size;
+				}
+			}
+		}
+		/// Sociales
+		.sociales{
+			padding: 0 1rem;
+			&__link:not(:last-child){
+				margin-right: .5rem;
+			}
+			&__link{
+				img{
+					width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          transition: $speed + .2;
+          &:hover{
+            transform: rotate(360deg);
+          }
+				}
+			}
+		}
+>>>>>>> 05de9b86d0025866153ff19b61c2aa0efd767611
 
     /// Form
     &__form {
@@ -446,6 +524,7 @@ nav ul li a:hover {
 }
 
 /// Footer
+<<<<<<< HEAD
 .footer {
   background: $grey;
   display: flex;
@@ -466,6 +545,29 @@ nav ul li a:hover {
     color: $white !important;
     font-weight: lighter;
   }
+=======
+.footer{
+	background: $grey;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 2rem;
+	&__list{
+		padding: 0;
+		margin: 0;
+		color:$light_grey;
+		flex-wrap: wrap;
+		&__item:not(:last-child){
+      margin-right: 1.25rem;
+      text-transform: uppercase;
+		}
+	}
+	&__copy{
+		color:$white !important;
+		font-weight: lighter;
+	}
+>>>>>>> 05de9b86d0025866153ff19b61c2aa0efd767611
 }
 
 .row__list {
