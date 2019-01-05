@@ -1,6 +1,7 @@
 import $ from "jquery"; // Jquery
 import "slick-carousel";
 import wow from "wowjs";
+import Isotope from "isotope-layout";
 
 window.WOW = wow.WOW;
 
@@ -72,22 +73,15 @@ $(function() {
     }
   }
 
-<<<<<<< HEAD
+  $(".loadMore").each((_, el) => loadMore(el, "Know More"));
   loadMore(".Weiterlesen", "Weiterlesen");
-  loadMore(".loadMore", "Know More");
-=======
-
-
-  $('.loadMore').each((_ , el) => loadMore(el , 'Know More'));
-    loadMore('.Weiterlesen' ,'Weiterlesen');
->>>>>>> 05de9b86d0025866153ff19b61c2aa0efd767611
 
   /**
    * Load more data
    * @param {HtmlElemnt} $elem
    * @param {Number} $count
    */
-  function showMore($elem, $btn , $count) {
+  function showMore($elem, $btn, $count) {
     let allElems = $($elem),
       btn = $($btn);
 
@@ -111,7 +105,7 @@ $(function() {
     }
   }
 
-  showMore(".machen__block", '.showMore' ,  6);
+  showMore(".machen__block", ".showMore", 6);
 
   // Your code here....
   /* portfolio */
@@ -143,25 +137,26 @@ $(function() {
   });
 
   // /* isotope */
-  // let elem = document.querySelector(".grid");
-  // let iso = new Isotope(elem);
+  let elem = document.querySelector(".grid");
+  let iso = new Isotope(elem);
 
-  // let buttons = $(".filter_btns li button");
+  let buttons = $(".filter_btns");
 
-  // buttons.on("click", function() {
-  //   let filterBy = $(this).attr("data-filter");
+  buttons.on("click", function() {
+    let filterBy = $(this).attr("data-filter");
 
-  //   let _self = $(this);
+    let _self = $(this);
 
-  //   for (let button of buttons) {
-  //     if (button.classList.contains("active"))
-  //       button.classList.remove("active");
+    for (let button of buttons) {
+      if (button.classList.contains("active"))
+        button.classList.remove("active");
 
-  //     _self.addClass("active");
-  //   }
+      _self.addClass("active");
+    }
 
-  //   iso.arrange({ filter: filterBy });
-  // });
+    iso.arrange({ filter: filterBy });
+  });
+
   $("#slider-area").slick({
     prevArrow: "<button class='slick-arrow slick-prev'><</button>",
     nextArrow: "<button class='slick-arrow slick-next'>></button>"
